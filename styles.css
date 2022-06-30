@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400&family=Outfit:wght@400;700&family=Poppins:wght@200;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: poppins;
+  font-size: 15px;
+  background-color: hsl(0, 0%, 98%);
+}
+h1 {
+  text-align: center;
+  font-weight: 200;
+  color: hsl(229, 6%, 66%);
+  margin: 50px auto;
+}
+span {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.par {
+  text-align: center;
+  margin-top: 10px;
+  color: hsl(229, 6%, 66%);
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1140px;
+}
+.box {
+  width: 350px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  position: relative;
+  margin: 15px;
+  overflow: hidden;
+  box-shadow: 10px 13px 4px rgba(0, 0, 0, 0.3), -3px -3px 4px rgba(0, 0, 0, 0.2);
+}
+.box::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  width: 100%;
+}
+.box-cyan::after {
+  background-color: hsl(180, 62%, 55%);
+}
+.box-red::after {
+  background-color: hsl(0, 78%, 62%);
+}
+.box-blue::after {
+  background-color: hsl(212, 86%, 64%);
+}
+
+.box-orange::after {
+  background-color: hsl(34, 97%, 64%);
+}
+.box-push {
+  transform: translateY(50%);
+}
+.box-cyan h2:hover {
+  color: hsl(180, 62%, 55%);
+  cursor: pointer;
+}
+.box-red h2:hover {
+  color: hsl(0, 78%, 62%);
+  cursor: pointer;
+}
+.box-blue h2:hover {
+  color: hsl(212, 86%, 64%);
+  cursor: pointer;
+}
+.box-orange h2:hover {
+  color: hsl(34, 97%, 64%);
+  cursor: pointer;
+}
+.box:hover img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.box p {
+  font-size: 14px;
+  margin: 15px 0 10px;
+}
+h2 {
+  color: hsl(234, 12%, 34%);
+}
+.box img {
+  display: block;
+  margin-left: auto;
+}
+.attribution {
+  font-size: 17px;
+  margin-top: 165px;
+}
+
+@media (max-width: 775px) {
+  .box-push {
+    transform: translateY(0);
+  }
+}
